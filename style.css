@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/*navbar section*/
+.container nav{
+    left: 0;
+    top: 0;
+   z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #1f242d;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+}
+.container nav .logo{
+
+    font-size: 30px;
+    color: #0ef;
+    padding: 0 40px;
+    font-weight:bold;
+    font-family:cursive;
+    cursor: pointer;
+}
+.container ul{
+display: flex;
+margin-bottom: 10px;
+}
+ul li{
+    list-style: none;
+} ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    transition: 2s;
+
+}
+.active,
+ul li a:hover
+{
+    color: #0ef;
+   
+}
+.menu-btn{
+    display: none;
+   
+    
+    text-align: center;
+   justify-content: center;
+   
+   transition: 0.2s ease; 
+}
+
+.menu-btn i{
+   font-size: 20px;
+  margin-top: 2px;
+  color: #fff;
+}
+
+/*home section start*/
+
+#home{
+    height: 100vh;
+    width: 100%;
+   background-color:#1f242d;
+   
+ 
+}
+.home-main{
+    display: flex;
+    position: absolute;
+    top: 200px;
+}
+.home-main .text{
+  margin-left: 20px; 
+}
+.home-main .text h2{
+    font-size: 35px;
+    color: #0ef;
+}
+.home-main .text h1{
+    font-size: 60px;
+    color: white;
+}
+.home-main .text p{
+    font-size: 23px;
+    color: white;
+    padding: 10px;
+}
+.image{
+   border: 5px solid #0ef;
+   box-shadow:0 0 2rem #0ef;
+   height: 470px;
+   width: 470px;
+   margin-left: 100px;
+   margin-top: -60px;
+   margin-right: 80px;
+   border-radius: 50%;
+  display: flex;
+  text-align: center;
+  animation: floatimage2 4s ease-in-out infinite;  
+}
+
+@keyframes  floatimage2{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(0.50rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.image img{
+    height: 450px;
+    width: 450px;
+   margin-left: 50px;
+   margin-top: -30px;
+animation: floatimage 4s ease-in-out infinite;
+}
+@keyframes  floatimage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.0rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*social media section*/
+
+.social-media i{
+    margin-top: 10px;
+    font-size: 35px;
+    padding: 1px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    color: #0ef;
+    margin-left: 5px;
+    background-color:#1f242d;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 2px solid #0ef;
+  background: transparent;
+  cursor: pointer;
+}
+.social-media i:hover{
+background-color:#0ef;
+box-shadow:  0 0 1rem #0ef;
+color: #1f242d;
+}
+.btn{
+   margin-top: 20px;
+
+}
+.btn button{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: #0ef;
+    transition: 0.3s ease;
+    border: 1px solid #0ef;
+}
+.btn button:hover{
+    box-shadow:  0 0 1rem #0ef;
+}
+/*typer section*/
+.conainer .text{
+    position: relative;
+    color: #0ef;
+    font-size: 33px;
+    font-weight: 600;
+    overflow: hidden;
+    }
+    .conainer .text.first-text{
+        color: white;
+      padding-right: 50px;
+    }
+    .text.sec-text:before{
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+       
+        height: 100%;
+        width: 100%;
+        background-color: #1f242d;
+        border-left: 2px solid #0ef;
+        animation: animate 3s steps(12) infinite;
+    }
+    @keyframes animate{
+        40%, 60%{
+            left: 100%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+    .conainer h3{
+        font-size: 30px;
+        color: white;
+         margin-right: -40px;
+    }
+    .conainer h4{
+        font-size: 30px;
+        color: white; 
+    }
+    .conainer .text{
+        margin-left: 3px;
+    } 
+    /* about section start*/
+    #about{
+        height: 180vh;
+        width: 100%;
+        background-color:#1f242d;
+       
+       
+    }
+    .about{
+       justify-content: space-between;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+    }
+    .about-text{
+        margin-top: 250px;
+        margin-left: 130px;
+    }
+    .about-text h4{
+        font-size: 60px;
+        margin-bottom: 10px;
+        color: #0ef;
+        font-family:fantasy;
+    }
+    .about-text h1{
+        font-size: 40px;
+        color: #fff;
+    }
+    .about-text h2{
+        font-size: 30px;
+        color: white; 
+    }
+    .about-text h3{
+        font-size: 23px;
+        color: #0ef; 
+        margin-right: 100px;
+        padding: 4px;
+    }
+
+    .image2{
+        margin-top: 140px;
+        margin-right: 120px;
+        border: 5px solid #0ef;
+   box-shadow:0 0 2rem #0ef;
+   border-radius: 50%;
+   height: 470px;
+   width: 470px;
+   text-align: center;
+   animation: floatimage 4s ease-in-out infinite;
+    }
+    @keyframes  floatimage{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-2.0rem);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    .image2 img{
+        height: 450px;
+        width: 370px;
+      
+    }
+    .about .btn{
+        margin-top: -150px;
+        margin-left: 200px;
+        font-weight:800;
+    }
+    .freind{
+        margin-top: 60px;
+        text-align: center;
+        font-size: 40px;
+        color: #0ef;
+    }
+    .about-myfreinds{
+      margin-top: 10px;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #0ef;
+      border-radius: 9px;
+    }
+    .about-myfreinds h1{
+        position: absolute;
+        font-size: 50px;
+        color: red;    
+             
+       margin-top: 50px;  
+    }
+       
+    /*service section start*/
+   #service{
+    height: 100vh;
+    width: 100%;
+  position: absolute;
+    background-color:#1f242d;
+   } 
+   .service{
+    padding: 50px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    overflow: hidden;
+   
+   } 
+   #service h1{
+    font-size: 50px;
+    margin-top: 100px;
+    color: #0ef;
+    text-align: center;
+   }
+   .box{
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 1s;
+   }
+   
+   .box i{
+    
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+   }
+   .box h2{
+font-size: 30px;
+color: white;
+   }
+   .box p{
+    color: white;
+    font-size: 16px;
+   }
+   .box button{
+    height: 40px;
+    width: 130px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color:#0ef;
+    transition: 0.3s ease;
+    border: 2px solid #0ef;
+    cursor: pointer;
+   }
+  
+   .box button:hover{
+    box-shadow:  0 0 2rem #0ef;
+   }

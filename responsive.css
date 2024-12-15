@@ -1,0 +1,206 @@
+@media (max-width:480px){
+    nav ul{
+         position: absolute; 
+         top: 90px;
+         left: 0;
+        
+         flex-direction: column;
+        align-items: center;
+         background-color: #004274;
+         height: 100vh;
+         width: 100%;
+         gap: 25px;
+         margin: auto;
+         overflow: hidden;
+         border-radius: 0 0 100px 0px;
+         
+     }
+     .container nav {
+         height: 100px;
+     }
+     .container nav .logo{
+     margin-left: -30px;
+     }
+     .menu-btn{
+         display: block;
+     }
+     ul li {
+      padding-top: 10px;  
+     }
+     #menu{
+         transition: all 0.5s;
+     }
+     /* about home*/
+     #home{
+      height: 100vh;
+      width: 500px;margin: auto;
+      overflow: hidden;
+     
+     }
+     .home{
+        margin-bottom: -50px;
+        height: 100vh;
+        width: 100%;
+        margin-bottom: -100%;
+        margin-left: 1px;
+       
+     }
+     .home-main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     }
+     .home-main .text h2{
+        font-size: 30px;
+        color: #0ef;
+    }
+     .home-main .text h1{
+        font-size: 40px;
+        color: white;
+    }
+     .home-main .text p{
+        font-size: 19px;
+        color: white;
+     margin: auto;
+    }
+    .image{
+        height: 300px;
+   width: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow:0 0 2rem #0ef;
+  
+  
+    }
+     .home .image img{
+        height: 280px;
+        width: 280;
+       
+     }
+     
+     .home .tex h3{
+     font-size: 20px;
+     margin-right: -20px;
+     }
+     .home .tex h1{
+         font-size: 30px;
+         }
+         .conainer h4 {
+            font-size: 22px;
+         }
+         .conainer .text{
+            font-size: 22px;
+            overflow: hidden;
+         }
+         .social-media i{
+            font-size: 33px;
+            height: 40px;
+            width: 40px;
+            margin-top: -5px;
+         }
+         .btn button{
+         height: 35px;
+         width: 150px;
+         font-size: 18px;
+         font-weight: 700;
+         margin-bottom: 20px;
+         margin-top: -8px;
+         }
+         /* about responsive */
+         #about{
+            height: 174vh;
+           width: 500px;
+            overflow: hidden;
+         }
+         .about{
+            margin-top: 100px;
+            display: grid;
+     grid-template-columns: repeat(1,1fr);
+         }
+         .about-text{
+            text-align: center;
+         }
+         .about-text h4{
+            font-size: 38px;
+           
+            text-align: center;
+         }
+         .about-text h1{
+            font-size: 20px;
+         }
+         .about-text h2{
+            font-size: 20px;
+            margin: auto;
+         }
+         .about-text h3{
+            font-size: 18px;
+            margin-left: 60px;
+         }
+         .image2{
+            height: 300px;
+            width: 300px;
+            margin-top: 40px;
+            margin-left: 90px;
+        
+         }
+        
+        .image2 img{
+         height: 280px;
+         width: 230px;    
+     }
+     .about-text{
+      margin-top: 80px;
+      margin-left: 20px;
+  }
+  .about .btn{
+  
+   
+   justify-content: center;
+   margin-top: 26px;
+   margin-left: 160px;
+   font-weight:800;
+}
+/* service section strart*/
+#service{
+   height: 100vh;
+   width: 500px;
+   padding: 0;
+}
+#service h1{
+  margin-top: 100px;
+}
+.service{
+   grid-template-columns: repeat(1,1fr);
+   margin-top: -30px;
+}
+.box{
+  margin: -5px;
+   height: 170px;
+   width: 400px;
+}
+.box i{  
+   font-size: 30px;
+   margin-top: -10px;
+}
+.box h2{
+   font-size: 25px;
+   margin-top: -16px;
+   color: #0ef;
+}
+.box button{
+   height: 36px;
+   width: 130px;
+   margin-top: 6px;
+}
+.about-myfreinds{
+   margin-top: 10px;
+   margin-left: 20px;
+   width: 450px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   border: 2px solid #0ef;
+   border-radius: 9px;
+ }
+        } 
